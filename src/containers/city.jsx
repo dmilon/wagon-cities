@@ -9,10 +9,12 @@ class City extends React.Component {
     this.props.setActiveCity(this.props.city)
   }
   render () {
+    let classes = "city list-group-item"
+    if (this.props.city === this.props.activeCity)  classes += "selected"
     return (
       <div
         style={{ border: '1px solid white' }}
-        className={this.props.flat === this.props.activeCity ? "selected" : ""}
+        className={classes}
         onClick={this.handleClick}>
         {this.props.city.name}
       </div>

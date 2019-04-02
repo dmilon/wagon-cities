@@ -4,12 +4,12 @@ import { connect } from 'react-redux'
 class ActiveCity extends React.Component {
   render () {
     if (this.props.activeCity) {
-      const image_url = `https://www.lewagon.com/api/v1/cities/${this.props.activeCity.slug}/cover?width=1200`
+      const imageUrl = `https://www.lewagon.com/api/v1/cities/${this.props.activeCity.slug}/cover?width=1200`
       return (
         <div className='active-city'>
           <h3>{this.props.activeCity.name}</h3>
           <p>{this.props.activeCity.address}</p>
-          <img src={image_url} width='100%' />
+          <img src={imageUrl} width='100%' />
         </div>
       )
     }

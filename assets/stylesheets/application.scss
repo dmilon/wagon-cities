@@ -6,17 +6,14 @@ body {
 .app {
   margin-top: 20px;
   margin-bottom: 20px;
+  padding: 10px 15px;
   display: flex;
   .cities {
     width: 30%;
-    .selected {
-      border: 6px red dashed;
-    }
   }
   .active-city {
     width: 70%;
     margin-left: 20px;
-    margin-bottom: 20px;
     padding: 10px 15px;
     border: 1px solid #ddd;
     border-radius: 4px;
