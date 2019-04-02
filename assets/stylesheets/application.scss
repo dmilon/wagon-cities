@@ -9,6 +9,9 @@ body {
   display: flex;
   .cities {
     width: 30%;
+    .selected {
+      border: 6px red dashed;
+    }
   }
   .active-city {
     width: 70%;
