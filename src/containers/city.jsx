@@ -2,7 +2,7 @@ import React from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 
-import { setActiveCity } from '../actions/index.js'
+import { setActiveCity } from '../actions/index'
 
 class City extends React.Component {
   handleClick = () => {
